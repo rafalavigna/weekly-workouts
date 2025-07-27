@@ -165,6 +165,15 @@ hr {
     border: 0.5px solid #ffbe34;
 }
 
+section[id]::before {
+  content: "";
+  display: block;
+  height: 2px;       /* esse espaço extra */
+  margin-top: -2px;  /* “puxa” a seção pra baixo */
+  visibility: hidden;
+}
+
+
 .div-alongamentos-img {
     display: flex;
     justify-content: center;
