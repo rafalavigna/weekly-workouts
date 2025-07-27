@@ -1,12 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden; /* bloqueia scroll horizontal */
+}
+
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     color: #333;
     font-weight: 300;
+    padding: 0;
 }
 
 body {
-        background-color: white;
+    background-color: white;
 }
 
 #titulo {
@@ -48,8 +61,7 @@ h1 {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #ffbe34;
-    max-width: fit-content;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 40px;
     max-width: 80%;
 }
 
@@ -80,6 +92,7 @@ h4 {
     text-align: center;
     font-weight: 500;
 }
+
 
 ul {
     list-style-position: outside;
@@ -126,7 +139,7 @@ hr {
 
 .div-alongamentos {
     border: 0.5px dotted gray;
-    width: 90%;
+    width: 88%;
     margin: 10px auto;
     padding: 10px;
     border-radius: 10px;
@@ -136,7 +149,7 @@ hr {
 
 .div-aquecimento {
     border: 0.5px dotted gray;
-    width: 90%;
+    width: 88%;
     margin: 10px auto;
     padding: 10px;
     border-radius: 10px;
@@ -145,8 +158,7 @@ hr {
 }
 
 .img-alongamentos {
-    width: 100%;
-    max-width: 300px;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 30px;
@@ -158,7 +170,7 @@ hr {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 
@@ -204,13 +216,10 @@ span {
 }
 
 footer {
+    width: 100%;
+    padding: 0.5rem;
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 0.5rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 #desenvolvido {
@@ -219,10 +228,10 @@ footer {
 }
 
 #yellow-div-footer {
-    margin-top: 50px;
     background-color: #ffbe34;
-    width: 100vw;
+    width: 100%;
     height: 4px;
+    margin: 50px 0 0; 
 }
 
 footer p {
